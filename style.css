@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d0d0d;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #00ccff;
+}
+
+#hero {
+  margin-top: 100px;
+  text-align: center;
+  padding: 2rem;
+}
+
+#form {
+  margin-top: 1rem;
+}
+
+#email {
+  padding: 0.5rem;
+  width: 250px;
+}
+
+#submit {
+  padding: 0.5rem 1rem;
+  background-color: #0d0d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.feature {
+  margin-bottom: 1.5rem;
+}
+
+#video-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #e8e8e8;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+/* ✅ Media Query */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero {
+    padding: 1rem;
+  }
+
+  #email {
+    width: 80%;
+  }
+}
